@@ -1,0 +1,182 @@
+body {
+    font-family: 'Verdana', sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6e6; /* Light pink background */
+}
+
+legend {
+    font-weight: bold;
+    color: #cc3366; /* Dark pink color to match the theme */
+    font-size: 18px; /* Slightly larger font size */
+    background-color: #ffe6e6; /* Light pink background to highlight the text */
+    padding: 8px 15px; /* Padding for better readability */
+    border-radius: 8px; /* Rounded corners for a soft look */
+    border: 1px solid #ff99aa; /* Light pink border to give a subtle outline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a subtle 3D effect */
+    text-align: center; /* Center the text for a balanced look */
+}
+
+/* Form Styling */
+form {
+    margin: 60px auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 35px;
+    max-width: 720px;
+}
+
+/* Main Heading Styling with Animation */
+h1 {
+    text-align: center;
+    color: #cc3366; /* Dark pink color */
+    font-size: 30px;
+    margin-bottom: 20px;
+    animation: fadeInScale 1.5s ease-in-out forwards; /* Fade-in animation */
+    opacity: 0; /* Start with hidden visibility */
+}
+
+/* Subheading Styling with Animation */
+h2 {
+    text-align: center;
+    color: #d15b7f; /* Slightly lighter pink for contrast */
+    font-size: 24px;
+    margin-bottom: 25px;
+    animation: slideIn 1.5s ease-out 0.5s forwards; /* Slide-in animation with delay */
+    opacity: 0; /* Start with hidden visibility */
+}
+
+/* Main Heading Animation Definition */
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8); /* Slightly smaller at the start */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Original size */
+    }
+}
+
+/* Subheading Slide-In Animation */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Slide in from below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+/* Fieldset Styling */
+fieldset {
+    border: 1px solid #ff99aa;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #fff0f5;
+    animation: fadeInBackground 2s ease-in-out forwards; /* Background fade-in */
+    opacity: 0; /* Start with hidden visibility */
+}
+
+/* Background Fade-In Animation */
+@keyframes fadeInBackground {
+    0% {
+        opacity: 0;
+        background-color: #ffe6e6;
+    }
+    100% {
+        opacity: 1;
+        background-color: #fff0f5; /* Light pink */
+    }
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-top: 15px;
+    color: #333333;
+    font-size: 16px;
+}
+
+/* Input and Textarea Styling */
+input, 
+textarea {
+    margin-top: 8px;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ff99aa;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #fff0f5;
+    outline: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+}
+
+/* Focus State */
+input:focus,
+textarea:focus {
+    border-color: #cc3366;
+    background-color: #ffe6e6; /* Change background on focus */
+    box-shadow: 0 0 5px rgba(204, 51, 102, 0.5);
+}
+
+/* Button Styling */
+button {
+    display: inline-block;
+    width: auto;
+    background-color: #ff6699;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 14px 28px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: buttonAppear 2s ease-in-out forwards 1s; /* Button appear animation */
+    opacity: 0; /* Start with hidden visibility */
+}
+
+/* Button Appear Animation */
+@keyframes buttonAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(30px); /* Slide in from below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #e05585;
+    transform: translateY(-4px);
+}
+
+/* Resume Display Styling */
+#resume-display {
+    max-width: 720px;
+    margin: 60px auto;
+    padding: 35px;
+    border: 1px solid #ff99aa;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeInBackground 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+/* Resume Heading Styling */
+#resume-display h2 {
+    color: #cc3366;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
